@@ -54,4 +54,4 @@ jobs:
         script: |
           docker stop simulado-app
           docker rm --force simulado-app
-          docker run  -d -p 8080:5000 --network=rede --name simulado-app felipecameloss/simulado-app:${{ github.sha }}
+          docker run  -d -p 8081:5000 --network=rede --name simulado-app felipecameloss/simulado-app:${{ github.sha }}
